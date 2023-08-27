@@ -2,7 +2,14 @@
  This repository is created for the purpose to keep project :- Student Management System and  Report Card PDF Generator
  
  
- SOFTWARE & HARDWARE REQUIREMENTS
+ 
+#  Report Card Pdf Generator
+#  & GUI Student Details
+#  CRUD Program.
+
+
+ 
+# SOFTWARE & HARDWARE REQUIREMENTS
 # Software Specifications:-
 Operating System :- Windows 7/8/10
 Platform :- Python IDLE 3.10
@@ -13,6 +20,7 @@ UI Design :- PyQt5
 Processor :- Intel(R)Pentium(R) or above
 Hard Disk :- 40GB
 Ram :- 4GB
+
 
 
 # INTRODUCTION
