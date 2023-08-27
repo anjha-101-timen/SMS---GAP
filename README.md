@@ -73,22 +73,20 @@ database & fill it in the template pdf.
 
 
 
+# SOFTWARE REQUIREMENTS
 Python IDLE :- Python IDLE offers a full-
 fledged file editor, which gives you the ability to
 write and execute Python programs from within
 this program.
-
 MySQL Database :- MySQL is a Relational
 Database Management System (RDBMS)
 developed by Oracle that is based on Structured
 Query Language (SQL).
-
 PyQt5 :- PyQt is widely used for creating
 large-scale GUI-based programs. It gives
 programmers the freedom to create GUIs of
 their choice. It gives you widgets to create
 complex GUIs.
-
 Sublime Text Editor :- Sublime is an
 advanced code editor. It is a lightweight, cross-
 platform code editor known for its speed, ease
