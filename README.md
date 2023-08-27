@@ -111,3 +111,19 @@ convert the data into information very
 effectively. The scopes of our application is very
 vast. It can be used not only in schools but also
 in colleges and offices etc.
+
+
+
+# LIMITATIONS
+(A) The limitation of the application is that it
+needs more improvement in Students Details
+and Marks Details management.
+(B) Our Application needs Graph to represent
+data with more clarity that will be visually
+appealing to the User instead our application
+uses Tables to display the information.
+(C) Storage Capacity is too small means it
+cannot store very large amount of data. Backup
+facility needs in future.
+(D) The application Code needs much more
+queries to make a better software in future.
