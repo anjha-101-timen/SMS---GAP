@@ -15,7 +15,7 @@ Hard Disk :- 40GB
 Ram :- 4GB
 
 
-INTRODUCTION
+# INTRODUCTION
 Our project work automates Report Card
 Generator & Student Details Management.
 Report Card PDF Generator retrieve data stored
