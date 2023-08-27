@@ -6,20 +6,6 @@
 #  Report Card Pdf Generator & GUI Student Details CRUD Program.
 
 
- 
-# SOFTWARE & HARDWARE REQUIREMENTS
-# Software Specifications:-
-Operating System :- Windows 7/8/10
-Platform :- Python IDLE 3.10
-Database :- MySQL
-Code Editor :- Sublime Text Editor
-UI Design :- PyQt5
-# Hardware Specifications:-
-Processor :- Intel(R)Pentium(R) or above
-Hard Disk :- 40GB
-Ram :- 4GB
-
-
 
 # INTRODUCTION
 Our project work automates Report Card
@@ -36,6 +22,20 @@ Students Details and Marks Details. The CRUD
 operation store the user-data in MySql table &
 retrieve as information in the form of Report
 Card.
+
+ 
+# SOFTWARE & HARDWARE REQUIREMENTS
+# Software Specifications:-
+Operating System :- Windows 7/8/10
+Platform :- Python IDLE 3.10
+Database :- MySQL
+Code Editor :- Sublime Text Editor
+UI Design :- PyQt5
+# Hardware Specifications:-
+Processor :- Intel(R)Pentium(R) or above
+Hard Disk :- 40GB
+Ram :- 4GB
+
 
 
 
