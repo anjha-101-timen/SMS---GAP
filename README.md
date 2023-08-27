@@ -53,6 +53,26 @@ ease our life.
 
 
 
+# ACTION PLAN
+[1] Selection of the topic.
+[2] Approval of the topic by the Teacher-in-
+charge.
+[3] Preparation of wireframes before executing
+the process.
+[4] Create a template for Report Card.
+[5] Create a database with two tables to store
+students details & their marks details.
+[6] Create a Graphical User Interface Python
+Application to perform CRUD operations.
+Students Details and Marks Details can be
+create, read, update and delete by this
+application.
+[7] Create a Python Form to Extract Data from
+database & fill it in the template pdf.
+[8] User can take printouts of the generated pdf.
+
+
+
 Python IDLE :- Python IDLE offers a full-
 fledged file editor, which gives you the ability to
 write and execute Python programs from within
