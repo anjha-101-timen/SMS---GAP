@@ -3,9 +3,7 @@
  
  
  
-#  Report Card Pdf Generator
-#  & GUI Student Details
-#  CRUD Program.
+#  Report Card Pdf Generator & GUI Student Details CRUD Program.
 
 
  
