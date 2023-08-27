@@ -95,3 +95,19 @@ platform code editor known for its speed, ease
 of use, and strong community support.
 
 
+
+# CONCLUSION
+Report Card PDF Generator & GUI Student
+Details CRUD Program, saves times of teachers
+and administrators. Improving Teaching
+Standards. Complete Student Details
+automation. Effortless Marks Management.
+Python CRUD Operations in our application
+helps to manage the data easily.PyQt5 GUI
+helps teachers and administrators to work on
+the application very smoothly. MySQL RDBMS
+helps to store data securely. Forms are used to
+convert the data into information very
+effectively. The scopes of our application is very
+vast. It can be used not only in schools but also
+in colleges and offices etc.
