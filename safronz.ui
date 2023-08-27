@@ -1,0 +1,5635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1600</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1600</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1600</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>12</pointsize>
+    <weight>75</weight>
+    <italic>true</italic>
+    <bold>true</bold>
+    <underline>true</underline>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Student Report Card Generator </string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../../.designer/Downloads/red book.png</normaloff>../../../../.designer/Downloads/red book.png</iconset>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::RightToLeft</enum>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <property name="dockOptions">
+   <set>QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks</set>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1600</width>
+      <height>800</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1600</width>
+      <height>800</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1600</width>
+      <height>800</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+      <underline>true</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 120, 0);
+</string>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::West</enum>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Rounded</enum>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>40</width>
+      <height>40</height>
+     </size>
+    </property>
+    <property name="tabsClosable">
+     <bool>false</bool>
+    </property>
+    <property name="movable">
+     <bool>true</bool>
+    </property>
+    <property name="tabBarAutoHide">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Login</string>
+     </attribute>
+     <widget class="QLineEdit" name="pw_entry">
+      <property name="geometry">
+       <rect>
+        <x>735</x>
+        <y>420</y>
+        <width>250</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(30, 130, 230);
+border-radius:20px;
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="un_entry">
+      <property name="geometry">
+       <rect>
+        <x>735</x>
+        <y>350</y>
+        <width>250</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Ubuntu Condensed</family>
+        <pointsize>20</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="statusTip">
+       <string/>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(30, 130, 230);
+color: rgb(0, 0, 0);
+border-radius:20px;
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="dragEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="administrator_login_nameplate">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>160</y>
+        <width>400</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(28, 113, 216);
+font: 75 40pt &quot;Ubuntu Condensed&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Administrator Login</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="kindly_enter_details">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>250</y>
+        <width>500</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(30, 130, 230);
+font: 75 25pt &quot;Ubuntu Condensed&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="pass_word">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>420</y>
+        <width>150</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 120, 0);
+font: 75 25pt &quot;Ubuntu Condensed&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Password</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="user_name">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>350</y>
+        <width>150</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 120, 0);
+font: 75 25pt &quot;Ubuntu Condensed&quot;;</string>
+      </property>
+      <property name="text">
+       <string>User Name</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="log_in_btn">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>500</y>
+        <width>120</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 25pt &quot;Ubuntu Condensed&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Login</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="c1">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>130</y>
+        <width>580</width>
+        <height>10</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="c3">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>600</y>
+        <width>580</width>
+        <height>10</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="c2">
+      <property name="geometry">
+       <rect>
+        <x>1080</x>
+        <y>160</y>
+        <width>10</width>
+        <height>420</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="c4">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>160</y>
+        <width>10</width>
+        <height>420</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="e1">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>150</y>
+        <width>10</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="e2">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>200</y>
+        <width>60</width>
+        <height>10</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="e7">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>530</y>
+        <width>10</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="e8">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>530</y>
+        <width>60</width>
+        <height>10</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="e5">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>530</y>
+        <width>10</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="e6">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>530</y>
+        <width>60</width>
+        <height>10</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="e4">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>200</y>
+        <width>60</width>
+        <height>10</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="e3">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>150</y>
+        <width>10</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_reportcard_nameplate">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1600</width>
+        <height>120</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 255, 255), stop:1 rgba(255, 255, 255, 255));
+font: 75 60pt &quot;Ubuntu Condensed&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Student Report Card Management System</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_pdf_generator_nameplate">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>680</y>
+        <width>1600</width>
+        <height>120</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(0, 0, 255, 255));
+font: 75 60pt &quot;Ubuntu Condensed&quot;;</string>
+      </property>
+      <property name="text">
+       <string>&amp; PDF Generator</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_19">
+     <attribute name="title">
+      <string>Student  Details</string>
+     </attribute>
+     <widget class="QTabWidget" name="tabWidget_student">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>60</y>
+        <width>555</width>
+        <height>666</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 0, 0, 255));
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="documentMode">
+       <bool>false</bool>
+      </property>
+      <property name="tabsClosable">
+       <bool>false</bool>
+      </property>
+      <property name="movable">
+       <bool>true</bool>
+      </property>
+      <property name="tabBarAutoHide">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="tab_20">
+       <attribute name="title">
+        <string>Create .C.</string>
+       </attribute>
+       <widget class="QLineEdit" name="father_name_zcaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>320</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="class_zcaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>170</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="mother_name_zcaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>370</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rclassc">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>170</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(237, 51, 59);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Class</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_create_e1">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>520</y>
+          <width>150</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 40pt &quot;Ubuntu Condensed&quot;;
+</string>
+        </property>
+        <property name="text">
+         <string>CREATE</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="telephone_zcaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>470</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rsectionc">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>220</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(246, 97, 81);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Section</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rmothernamec">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>370</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(224, 27, 36);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Mother Name</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rtelephonec">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>470</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(165, 29, 45);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Telephone</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="address_zcaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>420</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rrollnoc">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>270</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(246, 97, 81);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Roll.No</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="raddressc">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>420</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(192, 28, 40);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Address</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="student_name_zcaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>70</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rstudentnamec">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>70</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(192, 28, 40);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Student Name</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="date_of_birth_zcaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>120</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rstudentidc">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(165, 29, 45);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Student I.D</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rdateofbirthc">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>120</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(224, 27, 36);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Date Of Birth</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rfathernamec">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>320</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(237, 51, 59);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Father Name</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="student_id_zcaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>20</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="section_zcaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>220</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="roll_number_zcaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>270</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_21">
+       <attribute name="title">
+        <string>Read.R.</string>
+       </attribute>
+       <widget class="QLineEdit" name="father_name_zraj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>320</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="class_zraj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>170</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="mother_name_zraj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>370</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rclassr">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>170</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(237, 51, 59);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Class</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_read_e1">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>520</y>
+          <width>150</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 40pt &quot;Ubuntu Condensed&quot;;
+</string>
+        </property>
+        <property name="text">
+         <string>READ</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="telephone_zraj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>470</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rsectionr">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>220</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(246, 97, 81);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Section</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rmothernamer">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>370</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(224, 27, 36);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Mother Name</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rtelephoner">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>470</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(165, 29, 45);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Telephone</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="address_zraj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>420</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rrollnor">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>270</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(246, 97, 81);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Roll.No</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="raddressr">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>420</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(192, 28, 40);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Address</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="student_name_zraj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>70</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rstudentnamer">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>70</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(192, 28, 40);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Student Name</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="date_of_birth_zraj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>120</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rstudentidr">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(165, 29, 45);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Student I.D</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rdateofbirthr">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>120</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(224, 27, 36);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Date Of Birth</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rfathernamer">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>320</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(237, 51, 59);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Father Name</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="student_id_zraj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>20</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="student_combo_r">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>535</y>
+          <width>200</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(222, 100, 0);
+font: 75 25pt &quot;Ubuntu Condensed&quot;;
+selection-color: rgb(255, 255, 255);
+selection-background-color: rgb(0, 0, 0);</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="section_zraj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>220</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="roll_number_zraj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>270</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_22">
+       <attribute name="title">
+        <string>Update.U.</string>
+       </attribute>
+       <widget class="QLabel" name="rclassu">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>170</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(237, 51, 59);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Class</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="address_zuaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>420</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="date_of_birth_zuaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>120</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="mother_name_zuaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>370</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rstudentnameu">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>70</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(192, 28, 40);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Student Name</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="student_name_zuaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>70</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rfathernameu">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>320</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(237, 51, 59);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Father Name</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="father_name_zuaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>320</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rtelephoneu">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>470</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(165, 29, 45);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Telephone</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="telephone_zuaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>470</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rdateofbirthu">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>120</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(224, 27, 36);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Date Of Birth</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="class_zuaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>170</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="raddressu">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>420</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(192, 28, 40);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Address</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rmothernameu">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>370</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(224, 27, 36);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Mother Name</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rstudentidu">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(165, 29, 45);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Student I.D</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_update_e1">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>520</y>
+          <width>150</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 40pt &quot;Ubuntu Condensed&quot;;
+</string>
+        </property>
+        <property name="text">
+         <string>UPDATE</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rsectionu">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>220</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(246, 97, 81);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Section</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rrollnou">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>270</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(246, 97, 81);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Roll.No</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="student_id_zuaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>20</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="section_zuaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>220</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="roll_number_zuaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>270</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="student_combo_u">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>535</y>
+          <width>200</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(222, 100, 0);
+font: 75 25pt &quot;Ubuntu Condensed&quot;;
+selection-color: rgb(255, 255, 255);
+selection-background-color: rgb(0, 0, 0);</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_update_e0">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>535</y>
+          <width>100</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 24pt &quot;Ubuntu Condensed&quot;;
+</string>
+        </property>
+        <property name="text">
+         <string>Get Data</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_23">
+       <attribute name="title">
+        <string>Delete.D.</string>
+       </attribute>
+       <widget class="QLabel" name="rclassd">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>170</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(237, 51, 59);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Class</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rstudentidd">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(165, 29, 45);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Student I.D</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rtelephoned">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>470</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(165, 29, 45);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Telephone</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="father_name_zdaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>320</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rdateofbirthd">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>120</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(224, 27, 36);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Date Of Birth</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rmothernamed">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>370</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(224, 27, 36);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Mother Name</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rfathernamed">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>320</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(237, 51, 59);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Father Name</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="date_of_birth_zdaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>120</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="mother_name_zdaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>370</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rstudentnamed">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>70</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(192, 28, 40);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Student Name</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rsectiond">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>220</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(246, 97, 81);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Section</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="class_zdaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>170</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="raddressd">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>420</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(192, 28, 40);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Address</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="address_zdaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>420</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rrollnod">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>270</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(246, 97, 81);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Roll.No</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_delete_e1">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>520</y>
+          <width>150</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 40pt &quot;Ubuntu Condensed&quot;;
+</string>
+        </property>
+        <property name="text">
+         <string>DELETE</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="student_name_zdaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>70</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="telephone_zdaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>470</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="student_id_zdaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>20</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="section_zdaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>220</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="roll_number_zdaj">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>270</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="student_combo_d">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>535</y>
+          <width>200</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(222, 100, 0);
+font: 75 25pt &quot;Ubuntu Condensed&quot;;
+selection-color: rgb(255, 255, 255);
+selection-background-color: rgb(0, 0, 0);</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_delete_e0">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>535</y>
+          <width>100</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 24pt &quot;Ubuntu Condensed&quot;;
+</string>
+        </property>
+        <property name="text">
+         <string>Get Data</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_student">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>100</y>
+        <width>900</width>
+        <height>600</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Ubuntu Condensed</family>
+        <pointsize>16</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 16pt &quot;Ubuntu Condensed&quot;;</string>
+      </property>
+      <property name="lineWidth">
+       <number>10</number>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="gridStyle">
+       <enum>Qt::SolidLine</enum>
+      </property>
+      <column>
+       <property name="text">
+        <string>Student I.D.</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Student Name</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Date Of Birth</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Class</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Section</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Roll.No</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Father Name</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Mother Name</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Address</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Telephone</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_24">
+     <attribute name="title">
+      <string>Marks</string>
+     </attribute>
+     <widget class="QTabWidget" name="tabWidget_formativeassessment">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>60</y>
+        <width>555</width>
+        <height>666</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::TabFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(0, 255, 0, 255));
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="movable">
+       <bool>true</bool>
+      </property>
+      <property name="tabBarAutoHide">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="tab_25">
+       <attribute name="title">
+        <string>Create .C.</string>
+       </attribute>
+       <widget class="QLabel" name="ggkc">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>470</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(38, 162, 105);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>G.K.</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="general_knowlegde_cfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>470</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="hindi_cfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>170</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_create_fa0">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>520</y>
+          <width>150</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 40pt &quot;Ubuntu Condensed&quot;;
+border-color: rgb(0, 0, 0);
+selection-color: rgb(255, 120, 0);
+selection-background-color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>CREATE</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="genglishc">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>120</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(51, 209, 122);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>ENGLISH</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="gmathsc">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>270</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(143, 240, 164);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>MATHEMATICS</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="gsocialsciencec">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>370</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(51, 209, 122);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>SOCIAL SCIENCE</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="ghindic">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>170</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(87, 227, 137);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>HINDI</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="gsciencec">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>320</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(87, 227, 137);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>SCIENCE</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="computer_cfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>420</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="science_cfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>320</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="gcomputerc">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>420</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(46, 194, 126);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>COMPUTER</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="gstudentidc">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(38, 162, 105);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>F.A.</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="gsanskritc">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>220</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(143, 240, 164);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>SANSKRIT</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="social_science_cfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>370</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="english_cfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>120</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="gfac">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>70</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(46, 194, 126);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>STUDENT I.D.</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="sanskrit_cfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>220</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="mathematics_cfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>270</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="fa_cfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>20</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(61, 56, 70);
+font: 75 25pt &quot;Ubuntu Condensed&quot;;
+selection-color: rgb(255, 255, 255);
+selection-background-color: rgb(0, 0, 0);</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_create_fa1">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>535</y>
+          <width>200</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 40pt &quot;Ubuntu Condensed&quot;;
+border-color: rgb(0, 0, 0);
+selection-color: rgb(255, 120, 0);
+selection-background-color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>CREATE</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="student_id_cfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>70</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="student_id_cfa_2">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>20</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_26">
+       <attribute name="title">
+        <string>Read.R.</string>
+       </attribute>
+       <widget class="QPushButton" name="btn_read_fa1">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>535</y>
+          <width>200</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 40pt &quot;Ubuntu Condensed&quot;;
+border-color: rgb(0, 0, 0);
+selection-color: rgb(255, 120, 0);
+selection-background-color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>READ</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="genglishr">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>120</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(51, 209, 122);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>ENGLISH</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="ggkr">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>470</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(38, 162, 105);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>G.K.</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="hindi_rfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>170</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="gcomputerr">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>420</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(46, 194, 126);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>COMPUTER</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="science_rfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>320</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="computer_rfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>420</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="gstudentidr">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(38, 162, 105);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>F.A.</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_read_fa0">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>520</y>
+          <width>150</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 40pt &quot;Ubuntu Condensed&quot;;
+border-color: rgb(0, 0, 0);
+selection-color: rgb(255, 120, 0);
+selection-background-color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>READ</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="english_rfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>120</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="general_knowlegde_rfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>470</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="sanskrit_rfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>220</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="gsocialsciencer">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>370</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(51, 209, 122);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>SOCIAL SCIENCE</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="social_science_rfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>370</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="ghindir">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>170</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(87, 227, 137);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>HINDI</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="mathematics_rfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>270</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="gsciencer">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>320</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(87, 227, 137);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>SCIENCE</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="gmathsr">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>270</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(143, 240, 164);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>MATHEMATICS</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="gfar">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>70</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(46, 194, 126);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>STUDENT I.D.</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="fa_rfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>20</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(61, 56, 70);
+font: 75 25pt &quot;Ubuntu Condensed&quot;;
+selection-color: rgb(255, 255, 255);
+selection-background-color: rgb(0, 0, 0);</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="gsanskritr">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>220</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(143, 240, 164);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>SANSKRIT</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="student_id_rfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>70</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_27">
+       <attribute name="title">
+        <string>Update.U.</string>
+       </attribute>
+       <widget class="QPushButton" name="btn_update_fa1">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>535</y>
+          <width>200</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 40pt &quot;Ubuntu Condensed&quot;;
+border-color: rgb(0, 0, 0);
+selection-color: rgb(255, 120, 0);
+selection-background-color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>GET DATA</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="genglishu">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>120</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(51, 209, 122);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>ENGLISH</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="ggku">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>470</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(38, 162, 105);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>G.K.</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="hindi_ufa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>170</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="gcomputeru">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>420</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(46, 194, 126);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>COMPUTER</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="science_ufa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>320</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="computer_ufa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>420</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="gstudentidu">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(38, 162, 105);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>F.A.</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_update_fa0">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>520</y>
+          <width>150</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 40pt &quot;Ubuntu Condensed&quot;;
+border-color: rgb(0, 0, 0);
+selection-color: rgb(255, 120, 0);
+selection-background-color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>UPDATE</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="english_ufa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>120</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="general_knowlegde_ufa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>470</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="sanskrit_ufa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>220</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="gsocialscienceu">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>370</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(51, 209, 122);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>SOCIAL SCIENCE</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="social_science_ufa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>370</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="ghindiu">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>170</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(87, 227, 137);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>HINDI</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="mathematics_ufa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>270</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="gscienceu">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>320</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(87, 227, 137);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>SCIENCE</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="gmathsu">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>270</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(143, 240, 164);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>MATHEMATICS</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="gfau">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>70</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(46, 194, 126);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>STUDENT I.D.</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="fa_ufa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>20</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(61, 56, 70);
+font: 75 25pt &quot;Ubuntu Condensed&quot;;
+selection-color: rgb(255, 255, 255);
+selection-background-color: rgb(0, 0, 0);</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="gsanskritu">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>220</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(143, 240, 164);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>SANSKRIT</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="student_id_ufa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>70</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_28">
+       <attribute name="title">
+        <string>Delete.D.</string>
+       </attribute>
+       <widget class="QPushButton" name="btn_delete_fa1">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>535</y>
+          <width>200</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 40pt &quot;Ubuntu Condensed&quot;;
+border-color: rgb(0, 0, 0);
+selection-color: rgb(255, 120, 0);
+selection-background-color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>GET DATA</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="genglishd">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>120</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(51, 209, 122);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>ENGLISH</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="ggkd">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>470</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(38, 162, 105);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>G.K.</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="hindi_dfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>170</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="gcomputerd">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>420</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(46, 194, 126);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>COMPUTER</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="science_dfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>320</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="computer_dfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>420</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="gstudentidd">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(38, 162, 105);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>F.A.</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_delete_fa0">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>520</y>
+          <width>150</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 40pt &quot;Ubuntu Condensed&quot;;
+border-color: rgb(0, 0, 0);
+selection-color: rgb(255, 120, 0);
+selection-background-color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>DELETE</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="english_dfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>120</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="general_knowlegde_dfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>470</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="sanskrit_dfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>220</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="gsocialscienced">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>370</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(51, 209, 122);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>SOCIAL SCIENCE</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="social_science_dfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>370</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="ghindid">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>170</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(87, 227, 137);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>HINDI</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="mathematics_dfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>270</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="gscienced">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>320</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(87, 227, 137);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>SCIENCE</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="gmathsd">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>270</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(143, 240, 164);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>MATHEMATICS</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="gfad">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>70</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(46, 194, 126);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>STUDENT I.D.</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="fa_dfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>20</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(61, 56, 70);
+font: 75 25pt &quot;Ubuntu Condensed&quot;;
+selection-color: rgb(255, 255, 255);
+selection-background-color: rgb(0, 0, 0);</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="gsanskritd">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>220</y>
+          <width>200</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu Condensed</family>
+          <pointsize>24</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 24pt &quot;Ubuntu Condensed&quot;;
+color: rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(143, 240, 164);
+selection-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>SANSKRIT</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="student_id_dfa">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>70</y>
+          <width>300</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 75 20pt &quot;Ubuntu Condensed&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_marks_crud">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>100</y>
+        <width>900</width>
+        <height>600</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Ubuntu Condensed</family>
+        <pointsize>16</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 16pt &quot;Ubuntu Condensed&quot;;</string>
+      </property>
+      <property name="lineWidth">
+       <number>10</number>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="gridStyle">
+       <enum>Qt::SolidLine</enum>
+      </property>
+      <column>
+       <property name="text">
+        <string>Student I.D.</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>English</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Hindi</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Sanskrit</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Mathematics</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Science</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Social Science</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Computer</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>General Knowledge</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <action name="menu11">
+   <property name="text">
+    <string>Add New Student</string>
+   </property>
+  </action>
+  <action name="menu12">
+   <property name="text">
+    <string>Edit New Student</string>
+   </property>
+  </action>
+  <action name="menu21">
+   <property name="text">
+    <string>Add/Edit/Delete Marks</string>
+   </property>
+  </action>
+  <action name="menu31">
+   <property name="text">
+    <string>Add/Edit/Delete Attendance Details</string>
+   </property>
+  </action>
+  <action name="menu41">
+   <property name="text">
+    <string>Add/Edit/Delete Fees Details</string>
+   </property>
+  </action>
+  <action name="menu51">
+   <property name="text">
+    <string>Student Reports</string>
+   </property>
+  </action>
+  <action name="menu52">
+   <property name="text">
+    <string>Marks Reports</string>
+   </property>
+  </action>
+  <action name="menu53">
+   <property name="text">
+    <string>Attendance Reports</string>
+   </property>
+  </action>
+  <action name="menu54">
+   <property name="text">
+    <string>Fees Reports</string>
+   </property>
+  </action>
+  <action name="menu61">
+   <property name="text">
+    <string>LogOut</string>
+   </property>
+  </action>
+  <action name="actionCreate_New_Student_Details">
+   <property name="text">
+    <string>Create New Student Details</string>
+   </property>
+  </action>
+  <action name="actionRead_Saved_Student_Details">
+   <property name="text">
+    <string>Read Saved Student Details</string>
+   </property>
+  </action>
+  <action name="actionUpdate_Student_Details">
+   <property name="text">
+    <string>Update Student Details</string>
+   </property>
+  </action>
+  <action name="actionDelete_Student_Details">
+   <property name="text">
+    <string>Delete Student Details</string>
+   </property>
+  </action>
+  <action name="ctn_cstudentd">
+   <property name="text">
+    <string>Create Student Details !</string>
+   </property>
+  </action>
+  <action name="actionRead_Student_Details">
+   <property name="text">
+    <string>Read Student Details</string>
+   </property>
+  </action>
+  <action name="ctn_rstudentd">
+   <property name="text">
+    <string>Read Student Details !</string>
+   </property>
+  </action>
+  <action name="ctn_ustudentd">
+   <property name="text">
+    <string>Update Student Details !</string>
+   </property>
+  </action>
+  <action name="ctn_dstudentd">
+   <property name="text">
+    <string>Delete Student Details !</string>
+   </property>
+  </action>
+  <action name="ctn_cparentd">
+   <property name="text">
+    <string>Create Parent Details !</string>
+   </property>
+  </action>
+  <action name="ctn_rparentd">
+   <property name="text">
+    <string>Read Parent Details !</string>
+   </property>
+  </action>
+  <action name="ctn_uparentd">
+   <property name="text">
+    <string>Update Parent Details !</string>
+   </property>
+  </action>
+  <action name="ctn_dparentd">
+   <property name="text">
+    <string>Delete Parent Details !</string>
+   </property>
+  </action>
+  <action name="ctn_clabworkd">
+   <property name="text">
+    <string>Create Laboratory Details !</string>
+   </property>
+  </action>
+  <action name="ctn_rlabworkd">
+   <property name="text">
+    <string>Read Laboratory Details !</string>
+   </property>
+  </action>
+  <action name="ctn_ulabworkd">
+   <property name="text">
+    <string>Update Laboratory Details !</string>
+   </property>
+  </action>
+  <action name="ctn_dlabworkd">
+   <property name="text">
+    <string>Delete Laboratory Details !</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
