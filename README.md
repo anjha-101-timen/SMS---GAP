@@ -33,6 +33,26 @@ Card.
 
 
 
+# OBJECTIVES
+The ultimate aim of this project is to build
+Report Card along with Student Data
+Management.
+The objective of selecting this topic are:-
+[1] To focus on the need to create report card
+for school.
+[2] To store data of student in a known &
+secure database, so that the information must
+be utilized for a long time. Also, there is no
+need to maintain record manually on paper.
+[3] To represent data in pictorial form such as
+table, graph etc.
+[4] To create various kinds of templates for
+report card, certificate etc.
+[5] To know more about the use of forms which
+ease our life.
+
+
+
 Python IDLE :- Python IDLE offers a full-
 fledged file editor, which gives you the ability to
 write and execute Python programs from within
